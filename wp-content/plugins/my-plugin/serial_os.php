@@ -94,10 +94,10 @@ function my_action() {
     $tablename = $wpdb->prefix . 'deneme';
     $sql = $wpdb->prepare("INSERT INTO `$tablename` (`name`) values (%s)", $_POST['name']);
     if ($wpdb->query($sql) !== false) {
-        return true;
+        echo $_POST['name'];
+        wp_die();
     }
-    echo $_POST['name'];
-    wp_die();
+
     $id    = $_POST['id'];
     $nonce = $_POST['nonce'];
     if ( wp_verify_nonce( $nonce, MY_ACTION_NONCE . $id ) ) {
