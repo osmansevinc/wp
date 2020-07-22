@@ -1,0 +1,21 @@
+.payment_method_iyzico_pwi label {
+	display: inline-flex !important;
+}
+
+.payment_method_iyzico_pwi img {
+  
+    width: 100%;
+    height: 20px;
+    margin-top: 4px !important;
+}
+
+.payment_method_iyzico_pwi p {
+  
+  font-size:15px;
+}
+
+.payment_method_iyzico img {
+
+	float: none !important;
+
+}
